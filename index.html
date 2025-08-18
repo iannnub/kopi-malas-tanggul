@@ -44,6 +44,10 @@
           class="nav-item hover-rotate-text cursor-pointer flex items-center space-x-1">
           <span>About</span>
         </a>
+        <a href="#gallery" 
+           class="nav-item hover-rotate-text cursor-pointer">
+          <span>Galeri</span>
+        </a>
         <a
           href="#pricing"
           class="nav-item hover-rotate-text cursor-pointer flex items-center space-x-1">
@@ -52,13 +56,14 @@
         <a
           href="#contact"
           class="nav-item hover-rotate-text cursor-pointer flex items-center space-x-1">
-          <span>Order</span>
+          <span>Contact</span>
         </a>
       </div>
 
-      <button
-        class="btn hidden md:block bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] shadow-lg shadow-secondary transition-all duration-300 ease-in-out border border-white/10 hover:shadow-xl hover:-translate-y-0.5 px-6 py-3 rounded-full font-medium">
-        Open Now
+      <button 
+      onclick="window.open('https://wa.me/6285336159009?text=Halo%2C%20saya%20tertarik%20dengan%20Kopi%20Malas','_blank')" 
+      class="btn hidden md:block bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] shadow-lg shadow-secondary transition-all duration-300 ease-in-out border border-white/10 hover:shadow-xl hover:-translate-y-0.5 px-6 py-3 rounded-full font-medium">
+      Order Now
       </button>
 
       <button
@@ -81,6 +86,9 @@
       <a href="#about" class="nav-item flex items-center">
         <span>About</span>
       </a>
+      <a href="#gallery" class="nav-item hover-rotate-text cursor-pointer">
+        <span>Galeri</span>
+      </a>
       <a href="#pricing" class="nav-item flex items-center">
         <span>Pricing</span>
       </a>
@@ -98,14 +106,14 @@
         class="relative z-10 h-[105vh] flex flex-col items-center justify-center text-center rounded-b-3xl border border-white/20 text-white overflow-hidden">
         <div class="absolute inset-0 z-0">
           <video
-            preload="none"
+            preload="auto"
             autoplay
             muted
             loop
             class="w-full h-full object-cover">
             <source src="./assets/videos/bg-coklat.webm" type="video/webm" />
           </video>
-          <div class="absolute inset-0 bg-white/5 backdrop-blur-sm"></div>
+          <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div> 
         </div>
 
         <div class="relative z-10 px-4">
@@ -233,7 +241,7 @@
 
       <section
         id="about"
-        class="py-20 z-0 px-4 bg-[#251F1A] flex justify-center items-center relative overflow-hidden">
+        class="py-20 z-0 px-4 bg-gradient-to-b from-[var(--color-quaternary)] to-[var(--color-tertiary)] flex justify-center items-center relative overflow-hidden">
         <div class="max-w-7xl mx-auto w-full z-10">
           <div class="grid lg:grid-cols-2 gap-16 items-center z-10">
             <div class="space-y-8">
@@ -373,8 +381,179 @@
               </div>
             </div>
           </div>
+
+                  <div class="mt-24"> <div class="text-center mb-20">
+                <h2
+                    id="timeline-title"
+                    class="section-title text-5xl overflow-hidden font-playfair font-bold mb-6 gradient-text">
+                    Proses Kami
+                </h2>
+                <p
+                    id="timeline-subtitle"
+                    class="section-subtitle text-xl overflow-hidden text-white/80 max-w-3xl mx-auto">
+                    Dari Biji Hingga Cangkir. Setiap langkah kami lakukan dengan teliti untuk memastikan kualitas terbaik.
+                </p>
+            </div>
+
+            <div class="relative max-w-4xl mx-auto">
+                <div class="hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-full bg-white/20 rounded-full"></div>
+
+                <div class="space-y-12 lg:space-y-0">
+
+                    <div class="flex flex-col lg:flex-row items-center lg:items-start">
+                        <div class="lg:w-1/2 lg:pr-8 lg:text-right">
+                            <div class="floating-card p-6 rounded-2xl">
+                                <span class="iconify text-senary text-3xl mb-3 inline-block" data-icon="mdi:leaf-circle-outline"></span>
+                                <h3 class="text-2xl font-playfair font-bold mb-2">1. Pemetikan Biji Kopi</h3>
+                                <p class="text-white/70">Biji kopi robusta pilihan dipetik langsung oleh petani lokal dari perkebunan terbaik di Desa Manggisan saat mencapai kematangan sempurna.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-senary shadow-lg flex-shrink-0 relative z-10 mx-auto my-4 lg:my-0">
+                            <span class="iconify text-quaternary text-2xl" data-icon="mdi:leaf"></span>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-8"></div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start">
+                        <div class="lg:w-1/2 lg:pl-8 lg:text-left">
+                            <div class="floating-card p-6 rounded-2xl">
+                                <span class="iconify text-senary text-3xl mb-3 inline-block" data-icon="mdi:weather-sunny"></span>
+                                <h3 class="text-2xl font-playfair font-bold mb-2">2. Sortir & Penjemuran</h3>
+                                <p class="text-white/70">Hanya biji kopi terbaik yang lolos proses sortir untuk kemudian dijemur secara alami di bawah sinar matahari hingga mencapai tingkat kekeringan yang ideal.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-senary shadow-lg flex-shrink-0 relative z-10 mx-auto my-4 lg:my-0">
+                            <span class="iconify text-quaternary text-2xl" data-icon="mdi:grain"></span>
+                        </div>
+                        <div class="lg:w-1/2 lg:pr-8"></div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row items-center lg:items-start">
+                        <div class="lg:w-1/2 lg:pr-8 lg:text-right">
+                            <div class="floating-card p-6 rounded-2xl">
+                                <span class="iconify text-senary text-3xl mb-3 inline-block" data-icon="mdi:fire-circle"></span>
+                                <h3 class="text-2xl font-playfair font-bold mb-2">3. Penyangraian (Roasting)</h3>
+                                <p class="text-white/70">Proses sangrai dilakukan oleh ahli kami untuk mencapai tingkat kematangan yang pas, mengeluarkan seluruh potensi aroma dan cita rasa yang khas dari kopi Manggisan.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-senary shadow-lg flex-shrink-0 relative z-10 mx-auto my-4 lg:my-0">
+                            <span class="iconify text-quaternary text-2xl" data-icon="mdi:fire"></span>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-8"></div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start">
+                        <div class="lg:w-1/2 lg:pl-8 lg:text-left">
+                            <div class="floating-card p-6 rounded-2xl">
+                                <span class="iconify text-senary text-3xl mb-3 inline-block" data-icon="mdi:package-variant-closed"></span>
+                                <h3 class="text-2xl font-playfair font-bold mb-2">4. Pengemasan</h3>
+                                <p class="text-white/70">Kopi yang telah disangrai langsung dikemas dalam kemasan premium kedap udara untuk menjaga kesegaran dan aromanya hingga sampai ke tangan Anda.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-senary shadow-lg flex-shrink-0 relative z-10 mx-auto my-4 lg:my-0">
+                            <span class="iconify text-quaternary text-2xl" data-icon="mdi:archive-outline"></span>
+                        </div>
+                        <div class="lg:w-1/2 lg:pr-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </div>
       </section>
+
+      <section id="gallery" class="py-20 z-10 px-4 bg-[var(--color-quaternary)]">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2
+                id="gallery-title"
+                class="section-title text-5xl overflow-hidden font-playfair font-bold mb-6 gradient-text">
+                Galeri Kopi Malas
+            </h2>
+            <p
+                id="gallery-subtitle"
+                class="section-subtitle text-xl overflow-hidden text-white/80 max-w-3xl mx-auto">
+                Momen di balik secangkir kopi nikmat, dari kebun hingga ke tangan Anda.
+            </p>
+        </div>
+
+        <div class="flex justify-center items-center gap-2 md:gap-4 mb-12" id="gallery-filters">
+            <button data-filter="all" class="filter-btn active">Semua</button>
+            <button data-filter="photo" class="filter-btn">Foto</button>
+            <button data-filter="video" class="filter-btn">Video</button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6" id="gallery-grid">
+            <div class="gallery-item photo sm:col-span-2 lg:row-span-2 aspect-video rounded-2xl overflow-hidden floating-card group"
+                data-description="Proses sangrai untuk mengeluarkan aroma maksimal dari biji kopi robusta pilihan.">
+              <img 
+                    src="./assets/images/produk/2_biji.jpg" 
+                    alt="Proses sangrai biji kopi" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy">
+            </div>
+
+            <div class="gallery-item photo aspect-video rounded-2xl overflow-hidden floating-card group"
+                data-description="Proses sangrai untuk mengeluarkan aroma maksimal dari biji kopi robusta pilihan.">  
+              <img 
+                    src="./assets/images/produk/lengkapfix.jpg" 
+                    alt="Biji kopi pilihan di tangan petani" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy">
+            </div>
+
+            <div class="gallery-item video aspect-video rounded-2xl overflow-hidden floating-card group"
+                data-description="Proses sangrai untuk mengeluarkan aroma maksimal dari biji kopi robusta pilihan.">  
+              <video 
+                    preload="metadata" 
+                    controls 
+                    class="w-full h-full object-cover">
+                    <source src="./assets/images/produk/vid1.mp4" type="video/mp4" />
+                </video>
+            </div>
+            
+            <div class="gallery-item photo aspect-video rounded-2xl overflow-hidden floating-card group"
+                data-description="Proses sangrai untuk mengeluarkan aroma maksimal dari biji kopi robusta pilihan.">  
+              <img 
+                    src="./assets/images/produk/alat_roasting.jpg" 
+                    alt="Secangkir kopi robusta panas" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy">
+            </div>
+            
+            <div class="gallery-item photo aspect-video rounded-2xl overflow-hidden floating-card group"
+                data-description="Proses sangrai untuk mengeluarkan aroma maksimal dari biji kopi robusta pilihan.">  
+              <img 
+                    src="./assets/images/produk/lengkapfix.jpg" 
+                    alt="Kemasan produk Kopi Malas" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy">
+            </div>
+            
+            <div class="gallery-item photo sm:col-span-2 aspect-video rounded-2xl overflow-hidden floating-card group"
+                data-description="Proses sangrai untuk mengeluarkan aroma maksimal dari biji kopi robusta pilihan.">  
+              <img 
+                    src="./assets/images/produk/lengkapfix.jpg" 
+                    alt="Suasana kedai atau tempat produksi Kopi Malas" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy">
+            </div>
+
+        </div>
+    </div>
+    <div id="gallery-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+    <div class="relative w-full max-w-3xl rounded-2xl bg-[var(--color-tertiary)] p-4 md:p-6 shadow-2xl">
+        <button id="modal-close-btn" class="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-senary text-quaternary flex items-center justify-center text-2xl hover:scale-110 transition-transform">
+            <span class="iconify" data-icon="mdi:close"></span>
+        </button>
+
+        <div id="modal-content" class="mb-4 rounded-lg overflow-hidden aspect-video">
+            </div>
+
+        <p id="modal-description" class="text-white/80 text-center"></p>
+    </div>
+</div>
+</section>
 
       <section
         id="pricing"

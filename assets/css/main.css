@@ -159,3 +159,16 @@ background: radial-gradient(
     bottom: 6.25rem;
   }
 }
+
+/* Styling untuk Tombol Filter Galeri */
+.filter-btn {
+    @apply px-4 py-2 md:px-6 md:py-2.5 rounded-full text-sm md:text-base font-semibold border-2 border-transparent bg-white/10 text-white/70 transition-all duration-300;
+}
+
+.filter-btn:hover {
+    @apply bg-white/20 text-white;
+}
+
+.filter-btn.active {
+    @apply bg-[var(--color-senary)] text-[var(--color-quaternary)] border-[var(--color-senary)];
+}
